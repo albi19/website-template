@@ -1,0 +1,65 @@
+//main: style.sass
+
+$break-small: 720px
+$break-large: 1200px
+
+@media only screen and (max-width: 720px)
+    body
+        background-image: url(../images/bcg.jpeg) !important
+        background-position: center
+        background-size: cover
+    .load
+        h1
+            &:nth-child(1)
+                padding-bottom: 30%
+            &:nth-child(3)
+                padding-top: 30%
+    .logo
+        max-width: 90vw
+        font-size: 4vw
+
+@media screen and (max-width: $break-large)
+    .hamb
+        display: block
+    nav
+        position: absolute
+        height: 100vh
+        width: 100vw
+        left: 0
+        top: -100vh
+        z-index: 21
+        -webkit-writing-mode: vertical-rl
+        -moz-writing-mode: vertical-rl
+        -ms-writing-mode: vertical-rl
+        writing-mode: vertical-rl
+        transform: rotate(-180deg)
+    .open_nav
+        top: 0
+    .logo
+        position: relative !important
+        top: 5vh !important
+        left: 50% !important
+        transform: translate(-50%, -50%)
+    .news
+        position: absolute
+        top: 10vh !important
+        left: 50%
+        transform: translateX(-50%)
+        max-height: none !important
+        height: auto
+        margin-bottom: 20px
+        h1
+            top: 10%
+            transform: translateY(0%)
+        .inc
+            position: relative
+            display: table
+            padding-bottom: .5vw
+            .in1, .in2, .in3, .in1a
+                display: table
+                position: relative !important
+                width: 99% !important
+                height: auto !important
+                padding-bottom: 10px
+                h2,a,h4
+                    position: relative

@@ -1,0 +1,94 @@
+//main: style.sass
+
+.news
+    @include center
+    top: 20vh
+    transform: translateX(-50%)
+    width: 80vw
+    height: auto
+    background-color: $bcg-color-transp
+    box-shadow: 2px 2px 5px black
+    z-index: 6
+    margin: 0
+    padding: 0
+    opacity: 0
+    color: $text-color
+    transition: 1s all ease
+    h1
+        text-align: center
+        position: relative
+        top: 10%
+        text-shadow: 1px 1px 1px $text-shadow
+    a
+        color: $text-color
+    .inc
+        position: relative
+        left: 0
+        top: 0
+        width: 100%
+        min-height: auto !important
+        padding: 0
+        margin: 0
+        background: $text-color
+        font-family: "Josefin Sans"
+        overflow: auto
+        img
+            position: relative
+            width: auto
+            height: auto
+        .in1, .in2, .in3
+            position: relative
+            padding: 0
+            margin: .5%
+            background-color: $bcg-color
+            color: $text-color
+            h2, h3, h4, a, img, p
+                padding-left: 20px
+                padding-right: 20px
+            h2
+                text-shadow: 1px 1px 1px $text-shadow
+                letter-spacing: 2px
+        .in1
+            width: 99%
+            height: auto
+            h2
+                padding-top: 20px
+            p
+                padding-bottom: 20px
+        .in2
+            width: 49%
+            height: auto
+            &:nth-child(2n+1)
+                float: left
+                text-align: left
+            &:nth-child(4n+0), &:nth-child(4n+1)
+                background-color: $bcg-color !important
+                color: $text-color !important
+            &:nth-child(2n+2)
+                float: right
+                text-align: right
+            &:nth-child(4n+2), &:nth-child(4n+3)
+                background-color: $text-color !important
+                color: $bcg-color !important
+                a
+                    color: $bcg-color !important
+        .in3
+            color: $text-color
+            background-color: $bcg-color
+            width: 49%
+            height: auto
+            float: right
+            text-align: right
+            #a
+                float: left
+                text-align: left !important
+                color: $text-color
+                text-decoration: underline
+                padding: 25px 20px
+            &:nth-child(1)
+                float: left
+                text-align: left
+                #a
+                    float: right
+            &:nth-child(2)
+            &:nth-child(3)
