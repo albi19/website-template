@@ -4,61 +4,26 @@
     left: 50%
     transform: translate(-50%, -50%)
 
-//$text-color: #000
-//$text-shadow: #000
-//$bcg-color: #ffe29b
-//$bcg-color-transp: rgba(255, 226, 156, 0.8)
-
-$text-color: #eec358
-$text-shadow: #000
-$bcg-color: #fff
-$bcg-color-transp: rgba(255, 255, 255, 0.9)
+$text-color: #FF6857
+$text-shadow: #b03527
+$bcg-color: #FEE1D8
+$bcg-color-transp: rgba(#fee1d8, 0.91)
 
 body
     margin: 0
     padding: 0
-    background-image: url(../images/bcg.jpeg)
-    background-position: top
+    width: 100vw
+    height: 100vh
+    background-image: url(../images/redsky.jpg)
+    background-position: center
+    background-repeat: no-repeat
     background-size: cover
     font-family: "poppins"
+    font-weight: 400 !important
     overflow-x: hidden
 
 .oh
     overflow: hidden
-
-nav
-    position: relative
-    left: 0
-    top: 0
-    bottom: 0
-    padding: 0
-    margin: 0
-    text-align: center
-    width: 100vw
-    height: auto
-    background-color: $bcg-color
-    display: flex
-    z-index: 5
-    padding: 0
-    margin: 0
-    transition: 1s all ease
-    z-index: 11
-    a
-        position: relative
-        color: $text-color
-        text-decoration: none
-        display: inline-block
-        margin: auto
-        padding: 1% 1%
-        font-size: .90rem
-        letter-spacing: 2px
-        transition: .5s all ease
-        font-size: 15px
-        z-index: 12
-        font-weight: bold
-        //text-shadow: -1px 1px 1px $text-shadow
-        &:hover
-            letter-spacing: 5px
 
 .menu_name
     opacity: 0
@@ -69,7 +34,7 @@ nav
     z-index: 10
     color: $text-color
     font-size: 50px
-    text-shadow: 1px 1px 1px $text-shadow
+    text-shadow: 2px 2px 2px $text-shadow
 
 .filter
     position: fixed
@@ -133,13 +98,15 @@ nav
     opacity: 1
     width: auto !important
     transition: 2s all ease
-    z-index: 20
+    z-index: 7
     text-align: center
     //color: $bcg-color
     color: $text-color
     text-shadow: 1px 1px 1px $text-shadow
     text-decoration: none
+    font-weight: 600 !important
 
+@import "nav"
 
 @import "news"
 

@@ -7,20 +7,24 @@
     width: 80vw
     height: auto
     background-color: $bcg-color-transp
-    box-shadow: 2px 2px 5px black
+    box-shadow: 2px 2px 5px $text-shadow
     z-index: 6
     margin: 0
     padding: 0
     opacity: 0
     color: $text-color
     transition: 1s all ease
+    font-weight: 400 !important
     h1
         text-align: center
         position: relative
         top: 10%
-        text-shadow: 1px 1px 1px $text-shadow
+        font-weight: 600
+        text-shadow: 1px 1px 2px $text-shadow
     a
         color: $text-color
+        margin: 0
+        padding: 0 !important
     .inc
         position: relative
         left: 0
@@ -30,7 +34,6 @@
         padding: 0
         margin: 0
         background: $text-color
-        font-family: "Josefin Sans"
         overflow: auto
         img
             position: relative
@@ -42,19 +45,42 @@
             margin: .5%
             background-color: $bcg-color
             color: $text-color
+            &::first-letter
+                font-weight: 600
             h2, h3, h4, a, img, p
                 padding-left: 20px
                 padding-right: 20px
+                padding-top: 0
+                font-weight: 400
             h2
-                text-shadow: 1px 1px 1px $text-shadow
-                letter-spacing: 2px
+                text-shadow: 1px .5px 1px $text-shadow
+                font-size: 1.7em
+                letter-spacing: 1.5px
+                line-height: .8em
+            h3
+                padding-top: 0
+                padding-bottom: 0
+                margin: 0
+                font-size: 1.3em
+                line-height: .5em
         .in1
+            text-align: center
             width: 99%
+            min-height: none
             height: auto
+            background-color: $text-color
+            color: $bcg-color
+            h1
+                margin-top: 0
+                margin-bottom: 0
+                padding-bottom: 0
             h2
+                margin-top: 0
                 padding-top: 20px
             p
-                padding-bottom: 20px
+                margin: 0
+                padding-top: 20px
+                //text-shadow: 1px .5px 1px $text-shadow
         .in2
             width: 49%
             height: auto

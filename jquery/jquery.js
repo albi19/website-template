@@ -2,6 +2,10 @@ $(function(){
     $("nav").load("nav.html", function(){
         $("nav a").mouseenter(function(){
             var name = $(this).html();
+            name = name.replace("<br>","");
+            name = name.replace("<span>"," ");
+            name = name.replace("</span>","");
+            name = name.replace("</br>","");
             $(".menu_name").text(name);
             $(".filter").css({"z-index":"7"});
             setTimeout(function(){
