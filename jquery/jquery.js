@@ -23,6 +23,7 @@ $(function(){
         });
     });
 });
+
 function loaded(){
     setTimeout(function(){
         setTimeout(function(){
